@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ro" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Fotografia Lui Vlad | Portofoliu</title>
+    <meta name="description" content="Fotografia Lui Vlad - Surprindem emoții și creăm amintiri de neuitat. Servicii foto și video premium pentru nunți și evenimente.">
+    <meta name="keywords" content="fotograf, fotograf nunta, videograf, Fotografia Lui Vlad, foto video evenimente, fotograf botez">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        black: '#111111', 
+                        gray: {
+                            50: '#fafafa',
+                            100: '#f5f5f5',
+                            200: '#e5e5e5',
+                            500: '#737373',
+                            900: '#171717',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #FFFFFF;
+            color: #111111;
+        }
+        .img-hover {
+            transition: transform 0.7s ease, opacity 0.3s ease;
+        }
+        .img-container:hover .img-hover {
+            transform: scale(1.03);
+            opacity: 0.9;
+        }
+        /* Gradient Instagram */
+        .instagram-gradient {
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hover-instagram:hover {
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            color: white !important;
+            border-color: transparent !important;
+        }
+        .hover-instagram:hover i {
+            background: none;
+            -webkit-text-fill-color: white;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased selection:bg-black selection:text-white">
+
+    <header class="fixed w-full top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
+        <!-- Bara de contact superioară -->
+        <div class="bg-gray-50 border-b border-gray-100 text-[11px] md:text-xs text-gray-600 py-2">
+            <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row justify-center sm:justify-between items-center gap-2 sm:gap-0">
+                <div class="flex gap-4 md:gap-6">
+                    <a href="mailto:fotografialuivlad@gmail.com" class="hover:text-black transition flex items-center gap-1.5"><i class="fas fa-envelope text-gray-400"></i> fotografialuivlad@gmail.com</a>
+                    <a href="tel:+40750400190" class="hover:text-black transition flex items-center gap-1.5"><i class="fas fa-phone text-gray-400"></i> +40 750 400 190</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <a href="#acasa" class="text-xl font-serif tracking-wide text-black hover:opacity-70 transition">
+                    Fotografia Lui Vlad
+                </a>
+                
+                <!-- Meniu Desktop -->
+                <nav class="hidden md:flex space-x-10">
+                    <a href="#acasa" class="text-sm uppercase tracking-widest text-gray-500 hover:text-black transition">Acasă</a>
+                    <a href="#despre" class="text-sm uppercase tracking-widest text-gray-500 hover:text-black transition">Despre</a>
+                    <a href="#album" class="text-sm uppercase tracking-widest text-gray-500 hover:text-black transition">Album</a>
+                    <a href="#oferte" class="text-sm uppercase tracking-widest text-gray-500 hover:text-black transition">Oferte</a>
+                    <a href="#contact" class="text-sm uppercase tracking-widest text-gray-500 hover:text-black transition">Contact</a>
+                </nav>
+
+                <!-- Buton Meniu Mobile -->
+                <button id="mobile-menu-button" class="md:hidden text-black focus:outline-none">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Meniu Mobile -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-gray-100">
+            <div class="px-6 py-4 flex flex-col space-y-4">
+                <a href="#acasa" class="text-sm uppercase tracking-widest text-black mobile-link">Acasă</a>
+                <a href="#despre" class="text-sm uppercase tracking-widest text-black mobile-link">Despre</a>
+                <a href="#album" class="text-sm uppercase tracking-widest text-black mobile-link">Album</a>
+                <a href="#oferte" class="text-sm uppercase tracking-widest text-black mobile-link">Oferte</a>
+                <a href="#contact" class="text-sm uppercase tracking-widest text-black mobile-link">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Secțiunea Hero -->
+        <section id="acasa" class="pt-40 pb-20 px-6 min-h-[85vh] flex flex-col justify-center items-center text-center">
+            <p class="text-xs uppercase tracking-[0.3em] text-gray-500 mb-6">Fotografie & Videografie</p>
+            <h1 class="text-5xl md:text-7xl lg:text-8xl font-serif mb-8 text-black leading-tight">
+                Surprindem emoții. <br/> <span class="italic font-light">Creăm amintiri.</span>
+            </h1>
+            <p class="text-lg text-gray-500 font-light max-w-2xl mx-auto mb-12 leading-relaxed">
+                Un stil curat, atemporal și elegant. Documentăm cele mai importante momente din viața ta, lăsând frumusețea naturală să iasă în evidență.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center w-full sm:w-auto">
+                <a href="#contact" class="bg-black text-white px-10 py-4 text-sm uppercase tracking-widest hover:bg-gray-800 transition border border-black text-center flex items-center justify-center">
+                    Contactează-mă
+                </a>
+                <a href="https://wa.me/40750400190" target="_blank" rel="noopener noreferrer" class="bg-[#25D366] text-white px-10 py-4 text-sm uppercase tracking-widest hover:bg-[#1da851] transition border border-[#25D366] text-center flex items-center justify-center gap-2">
+                    <i class="fab fa-whatsapp text-lg"></i> WhatsApp
+                </a>
+            </div>
+        </section>
+
+        <!-- Secțiunea Despre Noi -->
+        <section id="despre" class="py-24 px-6 border-t border-gray-100">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-serif mb-8 text-black">Despre Noi</h2>
+                <p class="text-gray-500 font-light text-lg leading-relaxed mb-6">
+                    Suntem o echipă pasionată de estetica minimalistă, lumină naturală și emoții sincere. Abordarea noastră nu implică poze regizate forțat, ci captarea momentelor exact așa cum se desfășoară ele: pure, reale, pline de însemnătate.
+                </p>
+                <p class="text-gray-500 font-light text-lg leading-relaxed">
+                    De la pregătiri până la ultimul dans, ne propunem să fim martorii tăi discreți. Tu bucură-te de eveniment, noi ne asigurăm că amintirile tale vor arăta impecabil.
+                </p>
+            </div>
+        </section>
+
+        <!-- Secțiunea Album (Portofoliu) -->
+        <section id="album" class="py-24 px-6 border-t border-gray-100">
+            <div class="max-w-7xl mx-auto mb-16 text-center">
+                <h2 class="text-3xl md:text-4xl font-serif mb-4 text-black">Portofoliu</h2>
+                <p class="text-xs uppercase tracking-[0.2em] text-gray-500">Câteva clipe imortalizate</p>
+            </div>
+            
+            <!-- Grilă de imagini -->
+            <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+                <!-- Fotografii Nuntă (Unsplash) -->
+                <div class="aspect-[3/4] overflow-hidden bg-gray-50 img-container">
+                    <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Nunta 1" class="w-full h-full object-cover img-hover">
+                </div>
+                <div class="aspect-[3/4] overflow-hidden bg-gray-50 img-container">
+                    <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Nunta 2" class="w-full h-full object-cover img-hover">
+                </div>
+                <div class="aspect-[3/4] overflow-hidden bg-gray-50 img-container">
+                    <img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Nunta 3" class="w-full h-full object-cover img-hover">
+                </div>
+                <div class="aspect-[3/4] overflow-hidden bg-gray-50 img-container">
+                    <img src="https://images.unsplash.com/photo-1606800052052-a08af7148866?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Nunta 4" class="w-full h-full object-cover img-hover">
+                </div>
+                <div class="aspect-[3/4] overflow-hidden bg-gray-50 img-container">
+                    <img src="https://images.unsplash.com/photo-1537633552985-df8429e8048b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Nunta 5" class="w-full h-full object-cover img-hover">
+                </div>
+                <!-- Fotografie Botez - Scăldat copil -->
+                <div class="aspect-[3/4] overflow-hidden bg-gray-50 img-container">
+                    <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Botez Scaldat Cristelnita" class="w-full h-full object-cover img-hover">
+                </div>
+            </div>
+            
+            <div class="mt-16 text-center">
+                <a href="#contact" class="inline-block border-b border-black text-black pb-1 text-sm uppercase tracking-widest hover:text-gray-500 hover:border-gray-500 transition">
+                    Vezi mai multe lucrări
+                </a>
+            </div>
+        </section>
+
+        <!-- Secțiunea Oferte (Fără detalii, doar invitație de contact) -->
+        <section id="oferte" class="py-24 px-6 border-t border-gray-100 bg-gray-50/50">
+            <div class="max-w-4xl mx-auto text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-serif mb-6 text-black">Oferte</h2>
+                <p class="text-gray-600 font-light text-lg">
+                    Pentru mai multe informații și detalii despre serviciile oferite, vă invit să mă contactați.
+                </p>
+            </div>
+
+            <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+                
+                <!-- Pachet Foto -->
+                <div class="border border-gray-200 bg-white p-10 flex flex-col justify-center items-center hover:border-black transition duration-300 text-center min-h-[250px]">
+                    <h3 class="text-2xl font-serif text-black mb-8">Pachet Foto</h3>
+                    <a href="tel:+40750400190" class="w-full border border-black text-black py-3 text-xs uppercase tracking-widest hover:bg-black hover:text-white transition">
+                        Cere Detalii
+                    </a>
+                </div>
+
+                <!-- Pachet Foto + Video -->
+                <div class="border border-black bg-white p-10 flex flex-col justify-center items-center shadow-[0_4px_20px_rgba(0,0,0,0.03)] text-center min-h-[250px] relative">
+                    <h3 class="text-2xl font-serif text-black mb-8">Pachet Foto + Video</h3>
+                    <a href="https://wa.me/40750400190" target="_blank" class="w-full bg-black text-white py-3 text-xs uppercase tracking-widest hover:bg-gray-800 transition">
+                        Contactează-mă
+                    </a>
+                </div>
+
+                <!-- Pachet Video -->
+                <div class="border border-gray-200 bg-white p-10 flex flex-col justify-center items-center hover:border-black transition duration-300 text-center min-h-[250px]">
+                    <h3 class="text-2xl font-serif text-black mb-8">Pachet Video</h3>
+                    <a href="tel:+40750400190" class="w-full border border-black text-black py-3 text-xs uppercase tracking-widest hover:bg-black hover:text-white transition">
+                        Cere Detalii
+                    </a>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Secțiunea Footer / Contact -->
+    <footer id="contact" class="border-t border-gray-100 pt-24 pb-12 px-6">
+        <div class="max-w-4xl mx-auto text-center mb-16">
+            <h2 class="text-3xl font-serif mb-6 text-black">Haide să discutăm</h2>
+            <p class="text-gray-500 font-light text-lg mb-12">Rezervările sunt deschise. Contactează-mă pentru a verifica disponibilitatea datei tale.</p>
+            
+            <!-- Linkuri Contact Minimaliste -->
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-6 md:gap-10 mb-12">
+                <a href="mailto:fotografialuivlad@gmail.com" class="text-black text-lg hover:text-gray-500 transition flex items-center gap-3">
+                    <i class="fas fa-envelope text-gray-400"></i> fotografialuivlad@gmail.com
+                </a>
+                <a href="tel:+40750400190" class="text-black text-lg hover:text-gray-500 transition flex items-center gap-3">
+                    <i class="fas fa-phone text-gray-400"></i> +40 750 400 190
+                </a>
+            </div>
+
+            <!-- Social Media & Portofolii externe - Cu culori de brand -->
+            <div class="flex flex-wrap justify-center gap-4 md:gap-6">
+                <!-- Facebook -->
+                <a href="https://www.facebook.com/fotografialuivlad" target="_blank" rel="noopener noreferrer" class="w-12 h-12 rounded-full border border-gray-200 flex items-center justify-center text-[#1877F2] hover:bg-[#1877F2] hover:text-white hover:border-[#1877F2] transition shadow-sm" title="Facebook">
+                    <i class="fab fa-facebook-f text-lg"></i>
+                </a>
+                <!-- Instagram -->
+                <a href="https://www.instagram.com/fotografialuivlad/" target="_blank" rel="noopener noreferrer" class="w-12 h-12 rounded-full border border-gray-200 flex items-center justify-center hover-instagram transition shadow-sm group" title="Instagram">
+                    <i class="fab fa-instagram text-lg instagram-gradient group-hover:text-white"></i>
+                </a>
+                <!-- WhatsApp -->
+                <a href="https://wa.me/40750400190" target="_blank" rel="noopener noreferrer" class="w-12 h-12 rounded-full border border-gray-200 flex items-center justify-center text-[#25D366] hover:bg-[#25D366] hover:text-white hover:border-[#25D366] transition shadow-sm" title="WhatsApp">
+                    <i class="fab fa-whatsapp text-xl"></i>
+                </a>
+                <!-- Pexels -->
+                <a href="https://www.pexels.com/@fotografia-lui-vlad-1445510816/" target="_blank" rel="noopener noreferrer" class="w-12 h-12 rounded-full border border-gray-200 flex items-center justify-center text-[#05A081] hover:bg-[#05A081] hover:text-white hover:border-[#05A081] transition shadow-sm" title="Pexels">
+                    <span class="font-serif italic font-bold text-lg">P</span>
+                </a>
+                <!-- Unsplash -->
+                <a href="https://unsplash.com/@fotografialuivlad" target="_blank" rel="noopener noreferrer" class="w-12 h-12 rounded-full border border-gray-200 flex items-center justify-center text-black hover:bg-black hover:text-white hover:border-black transition shadow-sm" title="Unsplash">
+                    <i class="fab fa-unsplash text-lg"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Meniu Dublat Jos -->
+        <div class="border-t border-gray-100 pt-12 text-center">
+            <nav class="flex flex-wrap justify-center gap-6 md:gap-10 mb-8">
+                <a href="#acasa" class="text-xs uppercase tracking-widest text-gray-500 hover:text-black transition">Acasă</a>
+                <a href="#despre" class="text-xs uppercase tracking-widest text-gray-500 hover:text-black transition">Despre Noi</a>
+                <a href="#album" class="text-xs uppercase tracking-widest text-gray-500 hover:text-black transition">Album</a>
+                <a href="#oferte" class="text-xs uppercase tracking-widest text-gray-500 hover:text-black transition">Oferte</a>
+                <a href="#contact" class="text-xs uppercase tracking-widest text-gray-500 hover:text-black transition">Contact</a>
+            </nav>
+            <p class="text-xs text-gray-400">&copy; <script>document.write(new Date().getFullYear())</script> Fotografia Lui Vlad. Toate drepturile rezervate.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Logica simplă pentru meniul de pe mobil (Hamburger menu)
+        const btn = document.getElementById('mobile-menu-button');
+        const menu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Ascunde meniul pe mobil după ce se dă click pe un link
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
